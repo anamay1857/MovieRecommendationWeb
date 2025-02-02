@@ -1,0 +1,27 @@
+﻿@page
+@model MovieRecommendationWeb.Pages.IndexModel
+
+<h2>Movie Recommendation System</h2>
+
+<form method="post">
+    <div>
+        <label for="genres">Select up to 3 genres:</label>
+        <input type="text" name="genres" id="genres" placeholder="Enter genres separated by commas" />
+    </div>
+    <div>
+        <label for="maxResults">Number of results:</label>
+        <input type="number" name="maxResults" id="maxResults" min="1" />
+    </div>
+    <button type="submit">Get Recommendations</button>
+</form>
+
+@if (Model.Recommendations != null)
+{
+    <h3>Recommended Movies:</h3>
+    <ul>
+        @foreach (var movie in Model.Recommendations)
+        {
+            <li>@movie.Title (@movie.Genre)</li>
+        }
+    </ul>
+}

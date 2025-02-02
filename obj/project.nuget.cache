@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z+bCU5vKm6E=",
+  "success": true,
+  "projectFilePath": "/Users/anamay/Developer/Projects_personal/MovieRecommendationWeb/MovieRecommendationWeb.csproj",
+  "expectedPackageFiles": [
+    "/Users/anamay/.nuget/packages/csvhelper/33.0.1/csvhelper.33.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
